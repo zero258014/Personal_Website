@@ -79,7 +79,6 @@ let links = [aboutMe, resume, sideProjects]
 
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseover", () => {
-        console.log(links[i])
         links[i].style.color = "#c80c0c";
         links[i].style.scale
 
