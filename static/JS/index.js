@@ -70,41 +70,37 @@
 //     ctx.fill();
 // }
 
-const aboutMe = document.getElementById("about-me-link")
-const resume = document.getElementById("resume-link")
-const sideProjects = document.getElementById("side-projects-link")
+const aboutMe = document.getElementById("about-me-link");
+const resume = document.getElementById("resume-link");
+const sideProjects = document.getElementById("side-projects-link");
 // const github = document.getElementById("github")
 
-let links = [aboutMe, resume, sideProjects]
+let links = [aboutMe, resume, sideProjects];
 
 for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("mouseover", () => {
-        links[i].style.color = "#c80c0c";
-        links[i].style.fontSize = "24px";
-        links[i].style.scale
+  links[i].addEventListener("mouseover", () => {
+    // links[i].style.color = "#c80c0c";
+    links[i].style.fontSize = "24px";
+    links[i].style.scale;
 
-        if (i === 0) {
-            links[i].innerText = "私について";
-        } else if (i === 1) {
-            links[i].innerText = "経歴&職歴";
-        } else if (i === 2) {
-            links[i].innerText = "制作作品";
-        }
-    });
+    if (i === 0) {
+      links[i].innerText = "私について";
+    } else if (i === 1) {
+      links[i].innerText = "経歴&職歴";
+    } else if (i === 2) {
+      links[i].innerText = "制作作品";
+    }
+  });
 
-    links[i].addEventListener("mouseleave", () => {
-        links[i].style.color = "black";
-        links[i].style.fontSize = "20px";
-        if (i === 0) {
-            links[i].innerText = "About Me";
-        } else if (i === 1) {
-            links[i].innerText = "Resume";
-        } else if (i === 2) {
-            links[i].innerText = "Side Projects";
-        }
-    });
+  links[i].addEventListener("mouseleave", () => {
+    links[i].style.color = "white";
+    links[i].style.fontSize = "20px";
+    if (i === 0) {
+      links[i].innerText = "About Me";
+    } else if (i === 1) {
+      links[i].innerText = "Resume";
+    } else if (i === 2) {
+      links[i].innerText = "Side Projects";
+    }
+  });
 }
-
-
-
-
