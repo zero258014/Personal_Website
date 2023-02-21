@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    /* width: 95vw; */
+    margin: auto;
+    font-family: "Sawarabi Mincho";
+    display: flex;
+    flex-direction: column;
+}
+
+/* aboutMe main */
+
+.green-container,
+.white-container,
+.blue-container,
+.yellow-container {
+    height: 85vh;
+}
+
+.green-container {
+    background-color: lightgreen;
+}
+
+.blue-container {
+    background-color: aqua;
+}
+
+.yellow-container {
+    background-color: antiquewhite;
+}
