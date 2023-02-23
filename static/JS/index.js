@@ -80,8 +80,10 @@ let links = [aboutMe, resume, sideProjects];
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("mouseover", () => {
     // links[i].style.color = "#c80c0c";
-    links[i].style.fontSize = "24px";
-    links[i].style.scale;
+    // links[i].style.fontSize = "24px";
+    links[i].style.transition = "all 0.1s ease";
+    links[i].style.color = "lightgreen";
+    links[i].style.transform = "scale(1.1, 1.1) translate(5px,0px)";
 
     if (i === 0) {
       links[i].innerText = "私について";
@@ -94,7 +96,8 @@ for (let i = 0; i < links.length; i++) {
 
   links[i].addEventListener("mouseleave", () => {
     links[i].style.color = "white";
-    links[i].style.fontSize = "20px";
+    // links[i].style.fontSize = "20px";
+    links[i].style.transform = "scale(0.9, 0.9) translate(-5px,0px)";
     if (i === 0) {
       links[i].innerText = "About Me";
     } else if (i === 1) {
