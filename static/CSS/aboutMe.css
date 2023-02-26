@@ -1,20 +1,7 @@
 /* aboutMe main */
 
-.green-container,
-.white-container,
-.blue-container,
-.yellow-container {
-  height: 85vh;
-}
-
-.green-container {
-  background-color: lightgreen;
-}
-
-.blue-container {
-  background-color: aqua;
-}
-
-.yellow-container {
-  background-color: antiquewhite;
+.challenge_pict {
+  max-width: 700px;
+  max-height: 500px;
+  border-radius: 5%;
 }
