@@ -23,7 +23,7 @@ h6 {
 
 .nav-bar {
   background-color: black;
-  height: 60px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,7 +89,7 @@ h6 {
 
 /* ----------------------------------main-------------------------------------- */
 .main-area {
-  min-height: 517px;
+  min-height: 83vh;
   background-image: url("../img/homebg.jpeg");
   display: flex;
   align-items: center;
@@ -170,6 +170,7 @@ h6 {
 /* ---------------------------------footer------------------------------------- */
 
 footer {
+  height: 7vh;
   background-color: black;
   color: white;
   text-align: center;
