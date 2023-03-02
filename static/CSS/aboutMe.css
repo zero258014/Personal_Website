@@ -1,7 +1,41 @@
 /* aboutMe main */
 
-.challenge_pict {
-  max-width: 700px;
-  max-height: 500px;
-  border-radius: 5%;
+main {
+  background-color: azure;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 3vh;
+  color: rgb(255, 77, 77);
+  font-family: 'Fredoka One', cursive;
+}
+
+.challenge {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.challenge-pict {
+  max-width: 550px;
+  clip-path: polygon(0 0%, 100% 0%, 75% 95%, 0% 95%);
+}
+
+.challenge-text-box {
+  margin-right: 5vw;
+}
+
+h2 {
+  margin-top: 10vh;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  width: 400px;
+}
+
+p {
+  padding-top: 1rem;
+  width: 500px;
 }
