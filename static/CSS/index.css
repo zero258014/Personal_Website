@@ -118,12 +118,14 @@ header {
 }
 
 .home-title {
+  color: rgb(248, 224, 194);
   padding: 5px 5px 5px 25px;
   font-size: 40px;
   font-weight: 3rem;
 }
 
 .home-text {
+  color: aliceblue;
   padding: 5px 5px 5px 25px;
   font-size: 16px;
   font-weight: 1rem;

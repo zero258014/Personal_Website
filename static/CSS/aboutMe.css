@@ -9,7 +9,7 @@ h1 {
   text-align: center;
   padding-top: 3vh;
   color: rgb(255, 77, 77);
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
 }
 
 .challenge {
@@ -54,7 +54,7 @@ p {
   width: 500px;
 }
 
-.stay-foolish {
+.curiosity {
   position: relative;
   margin-top: 10vh;
   display: flex;
@@ -68,15 +68,38 @@ p {
   right: 30px;
   width: 80%;
   height: 90%;
-  background-color: rgb(255, 245, 233);
+  background-color: rgb(255, 236, 213);
   z-index: auto;
 }
 
-.stay-foolish-text-box {
+.curiosity-text-box {
   z-index: 1;
 }
 
-.stay-foolish-pict {
+.curiosity-pict {
   max-width: 350px;
   clip-path: polygon(10% 5%, 100% 5%, 100% 90%, 0% 90%);
+}
+
+.student-life {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.box3 {
+  position: absolute;
+  background-color: rgb(154, 253, 253);
+  width: 80%;
+  height: 110%;
+  left: 30px;
+  z-index: 1;
+}
+
+.st-life-pict {
+}
+
+.st-life-text-box {
+  z-index: 1;
 }
