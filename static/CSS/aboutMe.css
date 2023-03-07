@@ -5,7 +5,7 @@ main {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 48px;
   text-align: center;
   padding-top: 3vh;
   color: rgb(255, 77, 77);
@@ -13,10 +13,21 @@ h1 {
 }
 
 .challenge {
+  position: relative;
   margin-top: 4vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.box1 {
+  position: absolute;
+  width: 80%;
+  height: 110%;
+  background-color: rgb(212, 255, 174);
+  left: 30px;
+  top: -20px;
+  z-index: auto;
 }
 
 .challenge-pict {
@@ -26,9 +37,11 @@ h1 {
 
 .challenge-text-box {
   margin-right: 5vw;
+  z-index: 1;
 }
 
 h2 {
+  font-size: 30px;
   margin-top: 10vh;
   font-weight: 600;
   border-bottom: 1px solid black;
@@ -36,6 +49,34 @@ h2 {
 }
 
 p {
+  font-size: 18px;
   padding-top: 1rem;
   width: 500px;
+}
+
+.stay-foolish {
+  position: relative;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 5vh;
+}
+
+.box2 {
+  position: absolute;
+  right: 30px;
+  width: 80%;
+  height: 90%;
+  background-color: rgb(255, 245, 233);
+  z-index: auto;
+}
+
+.stay-foolish-text-box {
+  z-index: 1;
+}
+
+.stay-foolish-pict {
+  max-width: 350px;
+  clip-path: polygon(10% 5%, 100% 5%, 100% 90%, 0% 90%);
 }
