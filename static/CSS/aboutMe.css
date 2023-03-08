@@ -46,12 +46,14 @@ h2 {
   font-weight: 600;
   border-bottom: 1px solid black;
   width: 400px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 p {
   font-size: 18px;
   padding-top: 1rem;
   width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .curiosity {
@@ -86,6 +88,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 10vh;
 }
 
 .box3 {
@@ -98,8 +101,75 @@ p {
 }
 
 .st-life-pict {
+  max-width: 480px;
+  z-index: 1;
+  clip-path: polygon(10% 10%, 95% 10%, 100% 100%, 15% 100%);
 }
 
 .st-life-text-box {
   z-index: 1;
+}
+
+.Production {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.box4 {
+  position: absolute;
+  background-color: pink;
+  width: 80%;
+  height: 105%;
+  right: 30px;
+
+  z-index: 1;
+}
+
+.Production-text-box {
+  z-index: 1;
+}
+
+.Production-pict {
+  max-width: 450px;
+  clip-path: polygon(0% 5%, 95% 5%, 100% 95%, 5% 95%);
+  z-index: 1;
+}
+
+.see-more {
+  margin: 5vh 5vh 0 5vh;
+  border-top: solid 1px black;
+  text-align: center;
+  padding: 3vh 0 0 0;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.about-me-link {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.resume-link,
+.portfolio-link {
+  margin: 10px;
+  border: solid 3px black;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 24px;
+}
+
+.resume-link:hover,
+.portfolio-link:hover {
+  transition: all 0.3s ease;
+  background-color: aquamarine;
 }
