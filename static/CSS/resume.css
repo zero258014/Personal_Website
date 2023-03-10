@@ -1,0 +1,73 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 255, 235);
+}
+
+h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: 48px;
+    color: rgb(255, 77, 77);
+    margin-top: 10px;
+    padding: 5px 15px 10px 15px;
+}
+
+.resume-pict {
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: solid 4px rgb(115, 46, 55);
+}
+
+.line {
+    width: 2px;
+    border: solid 2px rgb(115, 46, 55);
+}
+
+.l1 {
+    height: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: fantasy;
+    margin-bottom: 20px;
+    margin: 5vh auto;
+}
+
+h4,
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {}
+
+.introduction {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 15vh 30px 15vh;
+    border: solid 4px rgb(115, 46, 55);
+}
+
+.l2 {
+    height: 150px;
+}
+
+.education {
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 15vh;
+    border: solid 4px rgb(115, 46, 55);
+}
