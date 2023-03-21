@@ -105,7 +105,9 @@ td {
     font-size: 20px;
 }
 
-.t1-pict {
+.t1-pict,
+.t2-pict,
+.t4-pict {
     max-width: 90%;
     margin: 0 5%;
 }
