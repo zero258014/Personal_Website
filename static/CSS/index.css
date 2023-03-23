@@ -1,8 +1,10 @@
 /* ----------------------------------index-------------------------------------- */
+body {
+  background-image: url("../img/homebg.jpeg");
+}
 
 .main-area {
   min-height: 83vh;
-  background-image: url("../img/homebg.jpeg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +12,9 @@
 }
 
 .left-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30rem;
 }
 
@@ -25,7 +30,7 @@
 }
 
 .home-title {
-  color: rgb(248, 224, 194);
+  color: aliceblue;
   padding: 5px 5px 5px 25px;
   font-size: 40px;
   font-weight: 3rem;
@@ -35,7 +40,7 @@
 .home-text {
   color: aliceblue;
   padding: 5px 5px 5px 25px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -82,4 +87,23 @@
 .blue_circle:hover {
   background-color: white;
   transition: all 0.5s ease;
+}
+
+@media(max-width: 800px) {
+  .profile-icon {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .red_circle,
+  .green_circle,
+  .blue_circle {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .main-area {
+    min-height: 88vh;
+    min-width: 100%;
+  }
 }

@@ -20,13 +20,13 @@ h6 {
 
 /* --------------------header------------------------- */
 header {
+  background-color: black;
   position: sticky;
   top: 0;
   z-index: 5;
 }
 
 .nav-bar {
-  background-color: black;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -96,6 +96,8 @@ header {
   height: 50px;
 }
 
+
+
 /* --------------------------footer------------------------------ */
 
 footer {
@@ -103,4 +105,56 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+}
+
+label {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+
+@media(max-width: 800px) {
+
+  .nav-bar {
+    display: block;
+    max-height: 62px;
+  }
+
+  .nav-bar-name {
+    margin-top: 7px;
+    float: left;
+    max-width: 230px;
+  }
+
+  label {
+    display: block;
+    margin: 1.5vh 3vw 0 0;
+    float: right;
+  }
+
+  .nav-bar-link {
+    clear: both;
+    display: block;
+    max-width: 100%;
+    background-color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  input:checked~.nav-bar-link {
+    max-height: 300px;
+  }
+
+  li {
+    min-height: 65px;
+    text-align: center;
+  }
+
+  .burger-icon {
+    max-width: 40px;
+  }
 }

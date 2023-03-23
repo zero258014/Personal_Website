@@ -55,6 +55,7 @@ h3 {
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 p {
@@ -234,4 +235,33 @@ p {
     color: rgb(58, 58, 255);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
+}
+
+@media(max-width: 800px) {
+
+    .introduction,
+    .education,
+    .experience,
+    .skill,
+    .license {
+        max-width: 300px;
+        flex-direction: row;
+        padding: 10px 5vw 30px 5vw;
+    }
+
+    .read-more {
+        min-width: 300px;
+    }
+
+    .skill-bar {
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .skill {
+        justify-content: center;
+    }
 }

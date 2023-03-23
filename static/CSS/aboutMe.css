@@ -173,3 +173,23 @@ p {
   transition: all 0.3s ease;
   background-color: aquamarine;
 }
+
+
+@media(max-width: 800px) {
+
+  .challenge-pict,
+  .curiosity-pict,
+  .st-life-pict,
+  .Production-pict {
+    max-width: 300px;
+  }
+
+  .challenge-text-box,
+  .curiosity-text-box,
+  .st-life-text-box,
+  .Production-text-box {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

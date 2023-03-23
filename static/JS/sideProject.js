@@ -27,5 +27,5 @@ function pict_change(counts, elements, files) {
     }
     elements.src = path + files[counts];
 
-    setTimeout(() => { pict_change(counts, elements, files); }, 3000);
+    setTimeout(() => { pict_change(counts, elements, files); }, 2500);
 }
