@@ -249,6 +249,10 @@ p {
         padding: 10px 5vw 30px 5vw;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     .read-more {
         min-width: 300px;
     }
