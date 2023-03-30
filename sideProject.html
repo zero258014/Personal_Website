@@ -1,255 +1,319 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <!-- All Search Engines // ブラウザに検索されることができる-->
+    <meta name="googlebot" content="index,follow" />
+    <!-- Google Specific // googleの検索-->
+    <meta name="author" content="Yen-Shen Wu" />
+    <meta name="description" content="Yen-Shen Wuの個人サイト" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index,follow" />
-  <!-- All Search Engines // ブラウザに検索されることができる-->
-  <meta name="googlebot" content="index,follow" />
-  <!-- Google Specific // googleの検索-->
-  <meta name="author" content="Yen-Shen Wu" />
-  <meta name="description" content="Yen-Shen Wuの個人サイト" />
+    <link rel="stylesheet" href="./static/CSS/nav.css" />
+    <link rel="stylesheet" href="./static/CSS/portfolio.css" />
+    <!-- 個人サイトアイコン -->
+    <link rel="icon" href="./static/img/logo.png" />
 
-  <link rel="stylesheet" href="./static/CSS/nav.css" />
-  <link rel="stylesheet" href="./static/CSS/portfolio.css" />
-  <!-- 個人サイトアイコン -->
-  <link rel="icon" href="./static/img/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/4a2cfe269a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/4a2cfe269a.js" crossorigin="anonymous"></script>
+    <title>Yen-Shen Wu</title>
+  </head>
 
-  <title>Yen-Shen Wu</title>
-</head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-bar-name">
+          <a href="./index.html" class="nav-bar-name-link"> Yen-Shen Wu </a>
+        </div>
+        <label for="burger"
+          ><img class="burger-icon" src="./static/img/lines.png" alt="menu"
+        /></label>
+        <input type="checkbox" id="burger" />
+        <ul class="nav-bar-link">
+          <li class="about-me" id="about-me">
+            <img
+              class="link-icon"
+              src="./static/img/about_me_icon.png"
+              alt="about me icon"
+            />
+            <a id="about-me-link" href="./aboutMe.html"> About Me </a>
+          </li>
+          <li class="resume" id="resume">
+            <img
+              class="link-icon"
+              src="./static/img/resume_icon.png"
+              alt="resume icon"
+            />
+            <a id="resume-link" href="./resume.html"> Resume </a>
+          </li>
+          <li class="side-projects" id="side-projects">
+            <img
+              class="link-icon"
+              src="./static/img/sideprojects_icon.png"
+              alt="side projects icon"
+            />
+            <a id="side-projects-link" href="./sideProject.html"> Portfolio </a>
+          </li>
+          <li class="github" id="github">
+            <a href="https://github.com/zero258014" target="_blank">
+              <img
+                class="github-icon"
+                src="./static/img/github-mark-white.png"
+                alt="github"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="nav-bar">
-      <div class="nav-bar-name">
-        <a href="./index.html" class="nav-bar-name-link"> Yen-Shen Wu </a>
-      </div>
-      <label for="burger"><img class="burger-icon" src="./static/img/lines.png" alt="menu"></label>
-      <input type="checkbox" id="burger">
-      <ul class="nav-bar-link">
-        <li class="about-me" id="about-me">
-          <img class="link-icon" src="./static/img/about_me_icon.png" alt="about me icon" />
-          <a id="about-me-link" href="./aboutMe.html"> About Me </a>
-        </li>
-        <li class="resume" id="resume">
-          <img class="link-icon" src="./static/img/resume_icon.png" alt="resume icon" />
-          <a id="resume-link" href="./resume.html"> Resume </a>
-        </li>
-        <li class="side-projects" id="side-projects">
-          <img class="link-icon" src="./static/img/sideprojects_icon.png" alt="side projects icon" />
-          <a id="side-projects-link" href="./sideProject.html"> Portfolio </a>
-        </li>
-        <li class="github" id="github">
-          <a href="https://github.com/zero258014" target="_blank">
-            <img class="github-icon" src="./static/img/github-mark-white.png" alt="github" />
+    <main>
+      <h1>My Project</h1>
+      <section class="task t1">
+        <div class="left-box">
+          <div class="title">
+            <h2>Mission 01 <span>占い館</span></h2>
+            <div class="complete">済</div>
+          </div>
+          <table>
+            <tr>
+              <th>難易度</th>
+              <td>★</td>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <td>2022年6月頃から 約2週間</td>
+            </tr>
+            <tr>
+              <th>概要</th>
+              <td>
+                JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
+                画面上現れたカードの中に好きなカードを選んで、
+                占い結果の画面がランダムに表示されるアプリです。
+              </td>
+            </tr>
+            <tr>
+              <th>開発環境</th>
+              <td><img src="./static/img/java-icon.png" alt="Java" /></td>
+            </tr>
+            <tr>
+              <th>Link</th>
+              <td>
+                <a
+                  class="resume-github-link"
+                  href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="right-box">
+          <img
+            id="t1-pict"
+            class="t1-pict"
+            src="./static/img/fortune01.jpg"
+            alt="t1-pict"
+          />
+        </div>
+      </section>
+
+      <section class="task t2">
+        <div class="left-box">
+          <div class="title">
+            <h2>Mission 02 <span>2D RPG ゲーム</span></h2>
+            <div class="complete">済</div>
+          </div>
+          <table>
+            <tr>
+              <th>難易度</th>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <td>2022年8月頃から 約1か月間</td>
+            </tr>
+            <tr>
+              <th>概要</th>
+              <td>
+                JavaScript、HTML、CSSだけでRPGゲームを作りました。
+                インターネット上のフリー素材を使って、マップを作成し、
+                キャラクターの移動、当たり判定、戦闘画面及びモンスターの遭遇をゼロからJSで作りました。
+              </td>
+            </tr>
+            <tr>
+              <th>開発環境</th>
+              <td>
+                <img src="./static/img/js-icon.png" alt="js" />,
+                <img src="./static/img/html-icon.png" alt="html" />,
+                <img src="./static/img/css-icon.png" alt="css" />, GSAP,
+                howler.js
+              </td>
+            </tr>
+            <tr>
+              <th>Link</th>
+              <td>
+                <a
+                  class="resume-github-link"
+                  href="https://github.com/zero258014/My2DGame"
+                  target="_blank"
+                  >GitHub</a
+                >
+                or
+                <a
+                  class="resume-github-link"
+                  href="https://shen-game.netlify.app/"
+                  target="_blank"
+                  >play the game</a
+                >
+                <br />
+                ※スマホでプレーできないので、ご注意ください。
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="right-box">
+          <img
+            id="t2-pict"
+            class="t2-pict"
+            src="./static/img/rpg01.png"
+            alt="t2-pict"
+          />
+        </div>
+      </section>
+
+      <section class="task t3">
+        <div class="left-box">
+          <div class="title">
+            <h2>Mission 03 <span>レシート識別アプリ</span></h2>
+            <div class="complete">済</div>
+          </div>
+          <table>
+            <tr>
+              <th>難易度</th>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <td>2022年11月頃から 約2か月</td>
+            </tr>
+            <tr>
+              <th>概要</th>
+              <td>
+                機械学習とspaCyが提供しているトレーニングモデルを用いて、レシート上にある文字を識別するアプリを作りました。
+                データ集め、データクレンジングとラベル付けの行為を行って、モデルの訓練結果を基づいてレシートにある文字を識別し、
+                特定の言葉も抽出できるウェブアプリケーションです。
+              </td>
+            </tr>
+            <tr>
+              <th>開発環境</th>
+              <td>
+                <img src="./static/img/python.png" alt="python" />,
+                <img src="./static/img/opencv.png" alt="opencv" />,
+                <img src="./static/img/flask.png" alt="flask" />, Tesseract OCR,
+                VScode 等
+              </td>
+            </tr>
+            <tr>
+              <th>Link</th>
+              <td>
+                <a
+                  class="resume-github-link"
+                  href="https://github.com/zero258014/Receipt-OCR"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="right-box">
+          <iframe
+            src="https://drive.google.com/file/d/19iFXbadNuvItRv1XcpRMpL8JQOskHS2h/preview"
+            width="95%"
+            height="450"
+            allow="autoplay"
+          ></iframe>
+          <a
+            class="video"
+            href="https://drive.google.com/file/d/19iFXbadNuvItRv1XcpRMpL8JQOskHS2h/preview"
+            target="_blank"
+          >
+            see the demo video
           </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1>My Project</h1>
-    <section class="task t1">
-      <div class="left-box">
-        <div class="title">
-          <h2>Mission 01 <span>占い館</span></h2>
-          <div class="complete">済</div>
         </div>
-        <table>
-          <tr>
-            <th>難易度</th>
-            <td>★</td>
-          </tr>
-          <tr>
-            <th>制作期間</th>
-            <td>2022年6月頃から 約2週間</td>
-          </tr>
-          <tr>
-            <th>概要</th>
-            <td>
-              JavaのGUI開発フレームワーク「swing」を用いて、始めて作ったアプリです。
-              画面上現れたカードの中に好きなカードを選んで、
-              占い結果の画面がランダムに表示されるアプリです。
-            </td>
-          </tr>
-          <tr>
-            <th>開発環境</th>
-            <td> <img src="./static/img/java-icon.png" alt="Java"> </td>
-          </tr>
-          <tr>
-            <th>Link</th>
-            <td><a class="resume-github-link" href="https://github.com/zero258014/Java_GUI_App-Fortuneteller"
-                target="_blank">GitHub</a></td>
-          </tr>
-        </table>
-      </div>
-      <div class="right-box">
-        <img id="t1-pict" class="t1-pict" src="./static/img/fortune01.jpg" alt="t1-pict" />
-      </div>
-    </section>
+      </section>
 
-    <section class="task t2">
-      <div class="left-box">
-        <div class="title">
-          <h2>Mission 02 <span>2D RPG ゲーム</span> </h2>
-          <div class="complete">済</div>
+      <section class="task t4">
+        <div class="left-box">
+          <div class="title">
+            <h2>Mission 04 <span>個人サイト</span></h2>
+            <div class="complete">済</div>
+          </div>
+          <table>
+            <tr>
+              <th>難易度</th>
+              <td>★★</td>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <td>2023年2月頃から 約3週間</td>
+            </tr>
+            <tr>
+              <th>概要</th>
+              <td>
+                自己紹介と経歴、学歴を載せ、今まで制作した作品をまとめた個人サイトです。
+                html、css、javascriptというプログラミング言語だけでなく、
+                個人サイトのデザインと見てる人の立場を考えながら、時間をかけて作りました。
+              </td>
+            </tr>
+            <tr>
+              <th>開発環境</th>
+              <td>
+                <img src="./static/img/js-icon.png" alt="js" />,
+                <img src="./static/img/html-icon.png" alt="html" />,
+                <img src="./static/img/css-icon.png" alt="css" />
+              </td>
+            </tr>
+            <tr>
+              <th>Link</th>
+              <td>
+                <a
+                  class="resume-github-link"
+                  href="https://github.com/zero258014/Personal_Website"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </td>
+            </tr>
+          </table>
         </div>
-        <table>
-          <tr>
-            <th>難易度</th>
-            <td>★★★</td>
-          </tr>
-          <tr>
-            <th>制作期間</th>
-            <td>2022年8月頃から 約1か月間</td>
-          </tr>
-          <tr>
-            <th>概要</th>
-            <td>
-              JavaScript、HTML、CSSだけでRPGゲームを作りました。
-              インターネット上のフリー素材を使って、マップを作成し、
-              キャラクターの移動、当たり判定、戦闘画面及びモンスターの遭遇をゼロからJSで作りました。
-            </td>
-          </tr>
-          <tr>
-            <th>開発環境</th>
-            <td>
-              <img src="./static/img/js-icon.png" alt="js">,
-              <img src="./static/img/html-icon.png" alt="html">,
-              <img src="./static/img/css-icon.png" alt="css">,
-              GSAP,
-              howler.js
-            </td>
-          </tr>
-          <tr>
-            <th>Link</th>
-            <td>
-              <a class="resume-github-link" href="https://github.com/zero258014/My2DGame" target="_blank">GitHub</a>
-              or
-              <a class="resume-github-link" href="https://shen-game.netlify.app/" target="_blank">play the game</a>
-              <br>
-              ※スマホでプレーできないので、ご注意ください。
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="right-box">
-        <img id="t2-pict" class="t2-pict" src="./static/img/rpg01.png" alt="t2-pict" />
-      </div>
-    </section>
-
-    <section class="task t3">
-      <div class="left-box">
-        <div class="title">
-          <h2>Mission 03 <span>レシート識別アプリ</span></h2>
-          <div class="complete">済</div>
+        <div class="right-box">
+          <img
+            id="t4-pict"
+            class="t4-pict"
+            src="./static/img/mypage01.png"
+            alt="t4-pict"
+          />
         </div>
-        <table>
-          <tr>
-            <th>難易度</th>
-            <td>★★★★★</td>
-          </tr>
-          <tr>
-            <th>制作期間</th>
-            <td>2022年11月頃から 約2か月</td>
-          </tr>
-          <tr>
-            <th>概要</th>
-            <td>
-              機械学習とspaCyが提供しているトレーニングモデルを用いて、レシート上にある文字を識別するアプリを作りました。
-              データ集め、データクレンジングとラベル付けの行為を行って、モデルの訓練結果を基づいてレシートにある文字を識別し、
-              特定の言葉も抽出できるウェブアプリケーションです。
-            </td>
-          </tr>
-          <tr>
-            <th>開発環境</th>
-            <td>
-              <img src="./static/img/python.png" alt="python">,
-              <img src="./static/img/opencv.png" alt="opencv">,
-              <img src="./static/img/flask.png" alt="flask">,
-              Tesseract OCR,
-              VScode 等
-            </td>
-          </tr>
-          <tr>
-            <th>Link</th>
-            <td><a class="resume-github-link" href="https://github.com/zero258014/Receipt-OCR"
-                target="_blank">GitHub</a></td>
-          </tr>
-        </table>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="myName"></div> -->
+      <div class="school">
+        吉田学園情報ビジネス専門学校 AIシステム学科<br />
+        吳彥諗 | ゴ ゲンシン
       </div>
-      <div class="right-box">
-        <iframe src="https://drive.google.com/file/d/19iFXbadNuvItRv1XcpRMpL8JQOskHS2h/preview" width="600" height="450"
-          allow="autoplay"></iframe>
-        <a class="video" href="https://drive.google.com/file/d/19iFXbadNuvItRv1XcpRMpL8JQOskHS2h/preview"
-          target="_blank">
-          see the demo video
-        </a>
-      </div>
-    </section>
+    </footer>
 
-    <section class="task t4">
-      <div class="left-box">
-        <div class="title">
-          <h2>Mission 04 <span>個人サイト</span></h2>
-          <div class="complete">済</div>
-        </div>
-        <table>
-          <tr>
-            <th>難易度</th>
-            <td>★★</td>
-          </tr>
-          <tr>
-            <th>制作期間</th>
-            <td>2023年2月頃から 約3週間</td>
-          </tr>
-          <tr>
-            <th>概要</th>
-            <td>
-              自己紹介と経歴、学歴を載せ、今まで制作した作品をまとめた個人サイトです。
-              html、css、javascriptというプログラミング言語だけでなく、
-              個人サイトのデザインと見てる人の立場を考えながら、時間をかけて作りました。
-
-            </td>
-          </tr>
-          <tr>
-            <th>開発環境</th>
-            <td>
-              <img src="./static/img/js-icon.png" alt="js">,
-              <img src="./static/img/html-icon.png" alt="html">,
-              <img src="./static/img/css-icon.png" alt="css">
-            </td>
-          </tr>
-          <tr>
-            <th>Link</th>
-            <td>
-              <a class="resume-github-link" href="https://github.com/zero258014/Personal_Website"
-                target="_blank">GitHub</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="right-box">
-        <img id="t4-pict" class="t4-pict" src="./static/img/mypage01.png" alt="t4-pict" />
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <!-- <div class="myName"></div> -->
-    <div class="school">
-      吉田学園情報ビジネス専門学校 AIシステム学科<br />
-      吳彥諗 | ゴ ゲンシン
-    </div>
-  </footer>
-
-  <script src="./static/JS/index.js"></script>
-  <script src="./static/JS/sideProject.js"></script>
-</body>
-
+    <script src="./static/JS/index.js"></script>
+    <script src="./static/JS/sideProject.js"></script>
+  </body>
 </html>
